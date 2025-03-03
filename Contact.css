@@ -1,0 +1,238 @@
+﻿* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+}
+
+/*Navbar Section*/
+.div1 {
+    margin-top: 2%;
+    margin-left: 1%;
+    width: 12%;
+    float: left;
+    height: 68px;
+}
+
+.div2 {
+    width: 75%;
+    float: right;
+    margin-top: 2%;
+    display: flexbox;
+    text-justify: inter-cluster;
+    text-align: center;
+}
+
+.Link {
+    font-size: 22px; 
+    font-weight: 100;
+    text-space-collapse: collapse;
+    text-decoration: none;
+}
+
+/*Contact Section*/
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    margin: auto;
+    max-width: 1200px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-form, .contact-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-form {
+    margin-right: 50px;
+}
+
+.contact-form h2, .contact-info h2 {
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-textarea {
+    height: 100px;
+    resize: none;
+}
+
+.btn-submit {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 6%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    margin:   20px 0;
+    font-size: 16px;
+}
+
+.contact-info i {
+    color: #007BFF;
+    margin-right: 10px;
+}
+
+.status-label {
+    color: green;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.foot {
+    margin-top: 20%;
+}
+
+.lbtn {
+    margin-top: 1%;
+    float: left;
+    margin-left: 15%;
+}
+
+.lbtn1 {
+    margin-top: 1%;
+    float:right;
+    margin-right: 60%;
+    width: 127px;
+}
+
+.flink {
+    font-weight: 100;
+    text-space-collapse: collapse;
+    text-decoration: none;
+}
+
+  /*Footer Section*/
+
+        footer {
+    margin-top: 15%;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    padding: 50px 100px;
+background-image: url('Image/IMG_20241208_183927.jpg');}
+
+    footer .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+        footer .container .sec h2 {
+            position: relative;
+            color: white;
+            font-weight: 600;
+            margin-bottom: 15px;
+    top: 0px;
+    left: 0px;
+}
+
+        footer .container .sec p {
+            color: white;
+        }
+
+        footer .container .sci {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(4,50px);
+        }
+
+            footer .container .sci li {
+                list-style: none;
+            }
+
+                footer .container .sci li a {
+                    display: inline-block;
+                    width: 36px;
+                    height: 36px;
+                    display: grid;
+                    aling-content: center;
+                    justify-content: center;
+                    text-decoration: none;
+                }
+
+ footer .container .sci li a i 
+ {
+      color: white;
+      font-size: 20px;
+ }
+
+        footer .container .q 
+        {
+            position: relative;
+        }
+
+            footer .container .q ul li {
+                list-style:none;
+            }
+
+                footer .container .q ul li a {
+                    color: white;
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                    display: inline-block;
+                }
+
+    footer .con .info {
+        position:relative;
+    }
+
+        footer .con .info li {
+            display: grid; 
+            grid-template-columns: 30px 1fr;
+            margin-bottom: 16px;
+        }
+
+            footer .con .info li span {
+                color: white;
+                font-size: 20px;
+            }
+
+            footer .con .info li a {
+                color: white;
+                text-decoration: none;
+            }
+
+.c {
+    width: 100%;
+    background: url('Image/IMG_20241208_183927.jpg');
+    padding: 20px 100px 30px;
+    text-align: center;
+    color: white;
+}

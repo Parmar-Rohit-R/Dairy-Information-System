@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9845F82-8AB1-459E-9B9E-EFB81EE7BE83}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DIS</RootNamespace>
+    <AssemblyName>DIS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="About.css" />
+    <Content Include="About1.aspx" />
+    <Content Include="Admin\Add_Gallery.aspx" />
+    <Content Include="Admin\Admin_Add.aspx" />
+    <Content Include="Admin\Admin_Add.css" />
+    <Content Include="Admin\Admin_Das.aspx" />
+    <Content Include="Admin\Admin_Das.css" />
+    <Content Include="Admin\Admin_Das_Add.aspx" />
+    <Content Include="Admin\Admin_Das_Add.css" />
+    <Content Include="Admin\Admin_Das_Manage.aspx" />
+    <Content Include="Admin\Admin_Das_Manage.css" />
+    <Content Include="Admin\Admin_Login.aspx" />
+    <Content Include="Admin\Admin_Manage.aspx" />
+    <Content Include="Admin\Admin_Manage.css" />
+    <Content Include="Admin\Admin_Profile.aspx" />
+    <Content Include="Admin\A_Login.css" />
+    <Content Include="Admin\F-P.css" />
+    <Content Include="Admin\Forgot-Password.aspx" />
+    <Content Include="Admin\Manage_Gallery.aspx" />
+    <Content Include="Admin\M_Report.aspx" />
+    <Content Include="Admin\Op_A.css" />
+    <Content Include="Admin\Op_Add.aspx" />
+    <Content Include="Admin\Product\Product_Add.aspx" />
+    <Content Include="Admin\Product\Product_Category_Add.aspx" />
+    <Content Include="Admin\Product\Product_Category_Manage.aspx" />
+    <Content Include="Admin\Product\Product_Manage.aspx" />
+    <Content Include="Admin\Product\P_A.css" />
+    <Content Include="Admin\Product\P_C_A.css" />
+    <Content Include="Admin\Product\P_C_M.css" />
+    <Content Include="Admin\Product\P_M.css" />
+    <Content Include="Admin\Product\Update_Product.aspx" />
+    <Content Include="Admin\Profile.css" />
+    <Content Include="Admin\Report.aspx" />
+    <Content Include="Admin\Report.css" />
+    <Content Include="Admin\Update_Manage_Gallery.aspx" />
+    <Content Include="Admin\View_Contact.aspx" />
+    <Content Include="Admin\View_Milk_Collection.aspx" />
+    <Content Include="Admin\V_C.css" />
+    <Content Include="Admin\V_Farmer.aspx" />
+    <Content Include="Admin\V_M_C.css" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Contact1.aspx" />
+    <Content Include="Gallery\Gallery.aspx" />
+    <Content Include="Gallery\Gallery.css" />
+    <Content Include="Gallery\Gallery.js" />
+    <Content Include="Home1.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Contact.css" />
+    <Content Include="F-P.css" />
+    <Content Include="Forgot-Password.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Home.css" />
+    <Content Include="Image\1000217239.png" />
+    <Content Include="Image\Banas -Oil.png" />
+    <Content Include="Image\Banas-Dairy-4-1.jpg" />
+    <Content Include="Image\Banas-Honey.png" />
+    <Content Include="Image\Banas.jpg" />
+    <Content Include="Image\banasdairy-branch.png" />
+    <Content Include="Image\Banas_Logo1 %281%29.png" />
+    <Content Include="Image\Banas_Logo1.png" />
+    <Content Include="Image\Bans-Ghee.png" />
+    <Content Include="Image\bg2milk.png" />
+    <Content Include="Image\Butter-Milk.png" />
+    <Content Include="Image\dji_export_1649660741894.jpg" />
+    <Content Include="Image\history.png" />
+    <Content Include="Image\history2.png" />
+    <Content Include="Image\images.png" />
+    <Content Include="Image\IMG_20241204_125447.jpg" />
+    <Content Include="Image\IMG_20241204_152750.jpg" />
+    <Content Include="Image\IMG_20241208_183927.jpg" />
+    <Content Include="Image\overview.png" />
+    <Content Include="Image\owner.png" />
+    <Content Include="Image\sh54lwhi_400x400.jpg" />
+    <Content Include="Image\un.jpg" />
+    <Content Include="Image\unnamed-scaled.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="Login.css" />
+    <Content Include="Operater\Add_Milk_Collection.aspx" />
+    <Content Include="Operater\Add_Milk_Collection.css" />
+    <Content Include="Operater\Forgot_Password.aspx" />
+    <Content Include="Operater\F_P.css" />
+    <Content Include="Operater\M_Report.aspx" />
+    <Content Include="Operater\M_Report.css" />
+    <Content Include="Operater\Op_Add_Farmer.aspx" />
+    <Content Include="Operater\Op_Add_Farmer.css" />
+    <Content Include="Operater\Op_D.aspx" />
+    <Content Include="Operater\Op_D.css" />
+    <Content Include="Operater\Op_Login.aspx" />
+    <Content Include="Operater\Op_Login.css" />
+    <Content Include="Operater\Op_Manage_Farmer.aspx" />
+    <Content Include="Operater\Op_Manage_Farmer.css" />
+    <Content Include="Operater\Op_Profile.aspx" />
+    <Content Include="Operater\Op_Profile.css" />
+    <Content Include="Operater\Update_Milk_Collection.aspx" />
+    <Content Include="Operater\Update_Milk_Collection.css" />
+    <Content Include="Operater\View_Milk_Collection.aspx" />
+    <Content Include="Operater\View_Milk_Collection.css" />
+    <Content Include="Admin\Op_M.css" />
+    <Content Include="Admin\Op_Manage.aspx" />
+    <Content Include="OTP\ForgotPassword.aspx" />
+    <Content Include="OTP\Report.aspx" />
+    <Content Include="OTP\ResetPassword.aspx" />
+    <Content Include="OTP\Style\F-P.css" />
+    <Content Include="OTP\Style\R-P.css" />
+    <Content Include="OTP\Style\V-O.css" />
+    <Content Include="OTP\VerifyOTP.aspx" />
+    <Content Include="OTP\WebForm1.aspx" />
+    <Content Include="Product.aspx" />
+    <Content Include="Product.css" />
+    <Content Include="Product1.aspx" />
+    <Content Include="Profile.aspx" />
+    <Content Include="Operater\Report.aspx" />
+    <Content Include="Operater\Report.css" />
+    <Content Include="Singup.aspx" />
+    <Content Include="Singup.css" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="View_Milk.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About1.aspx.cs">
+      <DependentUpon>About1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About1.aspx.designer.cs">
+      <DependentUpon>About1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Add_Gallery.aspx.cs">
+      <DependentUpon>Add_Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Add_Gallery.aspx.designer.cs">
+      <DependentUpon>Add_Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_Add.aspx.cs">
+      <DependentUpon>Admin_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_Add.aspx.designer.cs">
+      <DependentUpon>Admin_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_Das.aspx.cs">
+      <DependentUpon>Admin_Das.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_Das.aspx.designer.cs">
+      <DependentUpon>Admin_Das.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_Das_Add.aspx.cs">
+      <DependentUpon>Admin_Das_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_Das_Add.aspx.designer.cs">
+      <DependentUpon>Admin_Das_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_Das_Manage.aspx.cs">
+      <DependentUpon>Admin_Das_Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_Das_Manage.aspx.designer.cs">
+      <DependentUpon>Admin_Das_Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_Login.aspx.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_Login.aspx.designer.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_Manage.aspx.cs">
+      <DependentUpon>Admin_Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_Manage.aspx.designer.cs">
+      <DependentUpon>Admin_Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_Profile.aspx.cs">
+      <DependentUpon>Admin_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_Profile.aspx.designer.cs">
+      <DependentUpon>Admin_Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Forgot-Password.aspx.cs">
+      <DependentUpon>Forgot-Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Forgot-Password.aspx.designer.cs">
+      <DependentUpon>Forgot-Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Manage_Gallery.aspx.cs">
+      <DependentUpon>Manage_Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Manage_Gallery.aspx.designer.cs">
+      <DependentUpon>Manage_Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\M_Report.aspx.cs">
+      <DependentUpon>M_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\M_Report.aspx.designer.cs">
+      <DependentUpon>M_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Op_Add.aspx.cs">
+      <DependentUpon>Op_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Op_Add.aspx.designer.cs">
+      <DependentUpon>Op_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Product\Product_Add.aspx.cs">
+      <DependentUpon>Product_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Product\Product_Add.aspx.designer.cs">
+      <DependentUpon>Product_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Product\Product_Category_Add.aspx.cs">
+      <DependentUpon>Product_Category_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Product\Product_Category_Add.aspx.designer.cs">
+      <DependentUpon>Product_Category_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Product\Product_Category_Manage.aspx.cs">
+      <DependentUpon>Product_Category_Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Product\Product_Category_Manage.aspx.designer.cs">
+      <DependentUpon>Product_Category_Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Product\Product_Manage.aspx.cs">
+      <DependentUpon>Product_Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Product\Product_Manage.aspx.designer.cs">
+      <DependentUpon>Product_Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Product\Update_Product.aspx.cs">
+      <DependentUpon>Update_Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Product\Update_Product.aspx.designer.cs">
+      <DependentUpon>Update_Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Update_Manage_Gallery.aspx.cs">
+      <DependentUpon>Update_Manage_Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Update_Manage_Gallery.aspx.designer.cs">
+      <DependentUpon>Update_Manage_Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\View_Contact.aspx.cs">
+      <DependentUpon>View_Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\View_Contact.aspx.designer.cs">
+      <DependentUpon>View_Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\View_Milk_Collection.aspx.cs">
+      <DependentUpon>View_Milk_Collection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\View_Milk_Collection.aspx.designer.cs">
+      <DependentUpon>View_Milk_Collection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\V_Farmer.aspx.cs">
+      <DependentUpon>V_Farmer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\V_Farmer.aspx.designer.cs">
+      <DependentUpon>V_Farmer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact1.aspx.cs">
+      <DependentUpon>Contact1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact1.aspx.designer.cs">
+      <DependentUpon>Contact1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gallery\Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gallery\Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home1.aspx.cs">
+      <DependentUpon>Home1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home1.aspx.designer.cs">
+      <DependentUpon>Home1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forgot-Password.aspx.cs">
+      <DependentUpon>Forgot-Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forgot-Password.aspx.designer.cs">
+      <DependentUpon>Forgot-Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operater\Add_Milk_Collection.aspx.cs">
+      <DependentUpon>Add_Milk_Collection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operater\Add_Milk_Collection.aspx.designer.cs">
+      <DependentUpon>Add_Milk_Collection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operater\Forgot_Password.aspx.cs">
+      <DependentUpon>Forgot_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operater\Forgot_Password.aspx.designer.cs">
+      <DependentUpon>Forgot_Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operater\M_Report.aspx.cs">
+      <DependentUpon>M_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operater\M_Report.aspx.designer.cs">
+      <DependentUpon>M_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operater\Op_Add_Farmer.aspx.cs">
+      <DependentUpon>Op_Add_Farmer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operater\Op_Add_Farmer.aspx.designer.cs">
+      <DependentUpon>Op_Add_Farmer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operater\Op_D.aspx.cs">
+      <DependentUpon>Op_D.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operater\Op_D.aspx.designer.cs">
+      <DependentUpon>Op_D.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operater\Op_Login.aspx.cs">
+      <DependentUpon>Op_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operater\Op_Login.aspx.designer.cs">
+      <DependentUpon>Op_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operater\Op_Manage_Farmer.aspx.cs">
+      <DependentUpon>Op_Manage_Farmer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operater\Op_Manage_Farmer.aspx.designer.cs">
+      <DependentUpon>Op_Manage_Farmer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operater\Op_Profile.aspx.cs">
+      <DependentUpon>Op_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operater\Op_Profile.aspx.designer.cs">
+      <DependentUpon>Op_Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operater\Update_Milk_Collection.aspx.cs">
+      <DependentUpon>Update_Milk_Collection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operater\Update_Milk_Collection.aspx.designer.cs">
+      <DependentUpon>Update_Milk_Collection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operater\View_Milk_Collection.aspx.cs">
+      <DependentUpon>View_Milk_Collection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operater\View_Milk_Collection.aspx.designer.cs">
+      <DependentUpon>View_Milk_Collection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Op_Manage.aspx.cs">
+      <DependentUpon>Op_Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Op_Manage.aspx.designer.cs">
+      <DependentUpon>Op_Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OTP\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OTP\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OTP\Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OTP\Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OTP\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OTP\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OTP\VerifyOTP.aspx.cs">
+      <DependentUpon>VerifyOTP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OTP\VerifyOTP.aspx.designer.cs">
+      <DependentUpon>VerifyOTP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OTP\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OTP\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product1.aspx.cs">
+      <DependentUpon>Product1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product1.aspx.designer.cs">
+      <DependentUpon>Product1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Operater\Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operater\Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Singup.aspx.cs">
+      <DependentUpon>Singup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Singup.aspx.designer.cs">
+      <DependentUpon>Singup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View_Milk.aspx.cs">
+      <DependentUpon>View_Milk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View_Milk.aspx.designer.cs">
+      <DependentUpon>View_Milk.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55235/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
